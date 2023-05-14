@@ -65,12 +65,6 @@
                   files = "^.github/workflows/";
                 };
               };
-
-              excludes = [
-                "LICENSE.md"
-                "README.md"
-                "pnpm-lock.yaml"
-              ];
             };
           };
 
