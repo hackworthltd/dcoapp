@@ -6,13 +6,15 @@ on:
 jobs:
   dco:
     permissions:
+      checks: write
       contents: read
       pull-requests: write
+      statuses: write
 
     runs-on: ubuntu-latest
 
     steps:
       - name: Check DCO
-        uses: hackworthltd/dcoapp@main
+        uses: hackworthltd/dcoapp@fixes-v2
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
