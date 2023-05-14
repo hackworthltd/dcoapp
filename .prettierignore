@@ -1,0 +1,10 @@
+README.md
+LICENSE.md
+coverage/
+node_modules/
+dist/
+pnpm-lock.yaml
+.github/
+.direnv/
+flake.lock
+result*

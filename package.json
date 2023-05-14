@@ -10,9 +10,7 @@
     "start": "probot run ./index.js",
     "test": "jest --coverage",
     "update-snapshots": "jest --updateSnapshot",
-    "posttest": "pnpm run lint",
-    "lint": "prettier --check '{lib,test,docs}/**/*.{js,json,md}' index.js *.md package.json app.yml",
-    "lint:fix": "prettier --write '{lib,test,docs}/**/*.{js,json,md}' index.js *.md package.json app.yml"
+    "format": "prettier --write ."
   },
   "engines": {
     "node": ">=18",
