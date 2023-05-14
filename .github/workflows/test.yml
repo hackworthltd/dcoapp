@@ -1,19 +1,34 @@
-name: Test
+name: Run tests
 on:
   push:
     branches:
       - master
   pull_request:
-    types: [opened, synchronize]
 
 jobs:
-  test:
+  tests:
+    permissions:
+      contents: read
+
     runs-on: ubuntu-latest
+
     steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-node@v2
+      - name: Checkout repo
+        uses: actions/checkout@v3.5.2
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v2.2.4
         with:
-          node-version: "lts/*"
-          cache: npm
-      - run: npm ci
-      - run: npm test
+          version: 8.4.0
+
+      - name: Setup nodejs
+        uses: actions/setup-node@v3.6.0
+        with:
+          node-version-file: package.json
+          cache: "pnpm"
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Run tests
+        rum: pnpm test
