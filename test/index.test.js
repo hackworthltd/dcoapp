@@ -1,7 +1,7 @@
 const nock = require("nock");
 const { Probot, ProbotOctokitCore } = require("probot");
 
-const dco = require("..");
+const dco = require("../app.js");
 
 const payload = require("./fixtures/pull_request.opened");
 const payloadSuccess = require("./fixtures/pull_request.opened-success");

@@ -7,7 +7,7 @@
   "license": "ISC",
   "repository": "github:hackworthltd/dcoapp",
   "scripts": {
-    "start": "probot run ./index.js",
+    "start": "probot run ./app.js",
     "test": "jest --coverage",
     "update-snapshots": "jest --updateSnapshot",
     "format": "prettier --write .",
