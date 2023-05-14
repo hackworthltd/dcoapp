@@ -18,9 +18,7 @@ module.exports = {
   settings: {},
 
   rules: {
-    "no-unused-vars": [
-      "warn",
-    ],
+    "no-unused-vars": ["warn"],
   },
 
   overrides: [
