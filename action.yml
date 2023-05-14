@@ -3,3 +3,9 @@ description: "Enforce signed-off git commits"
 runs:
   using: "node16"
   main: "dist/index.js"
+inputs:
+  # You can also set the GITHUB_TOKEN environment variable, instead of
+  # this input.
+  token:
+    description: "The GitHub token to use for the action"
+    required: false
