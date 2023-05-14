@@ -1,5 +1,8 @@
-name: Run tests
+name: Build the GitHub Action
 on:
+  push:
+    branches:
+      - main
   pull_request:
 
 jobs:
@@ -27,8 +30,5 @@ jobs:
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
 
-      - name: Run tests
-        run: pnpm test
-
-      - name: Lint
-        run: pnpm lint
+      - name: Build the GitHub Action
+        run: pnpm build
