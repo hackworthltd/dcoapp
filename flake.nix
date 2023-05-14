@@ -72,7 +72,7 @@
             buildInputs = (with pkgs; [
               actionlint
               nixpkgs-fmt
-              nodejs
+              nodejs-16_x
               rnix-lsp
             ]);
 

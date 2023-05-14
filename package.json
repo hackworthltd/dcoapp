@@ -16,7 +16,7 @@
     "lint:fix": "eslint --fix ."
   },
   "engines": {
-    "node": ">=18",
+    "node": ">=16",
     "pnpm": "^8"
   },
   "dependencies": {
