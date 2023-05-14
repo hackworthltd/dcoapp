@@ -1,13 +1,13 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`dco check_run.requested_action event creates a passing check 1`] = `
-Object {
+{
   "completed_at": "2018-07-14T18:18:54.156Z",
   "conclusion": "success",
   "head_branch": "<head_branch>",
   "head_sha": "<head_sha>",
   "name": "DCO",
-  "output": Object {
+  "output": {
     "summary": "Commit sign-off was manually approved.",
     "title": "DCO",
   },
@@ -17,9 +17,9 @@ Object {
 `;
 
 exports[`dco pull_request event allowRemediationCommits.thirdParty: true creates a failing check with remidiation instructions 1`] = `
-Object {
-  "actions": Array [
-    Object {
+{
+  "actions": [
+    {
       "description": "would set status to passing",
       "identifier": "override",
       "label": "Set DCO to pass",
@@ -30,7 +30,7 @@ Object {
   "head_branch": "dco-test",
   "head_sha": "e76ed6025cec8879c75454a6efd6081d46de4c94",
   "name": "DCO",
-  "output": Object {
+  "output": {
     "summary": "There is one commit incorrectly signed off.  This means that the author of this commit failed to include a Signed-off-by line in the commit message.
 
 To avoid having PRs blocked in the future, always include \`Signed-off-by: Author Name <authoremail@example.com>\` in *every* commit message. You can also do this automatically by using the -s flag (i.e., \`git commit -s\`).
@@ -80,7 +80,7 @@ Signed-off-by: YOUR_NAME <YOUR_EMAIL>
 
 ### Least preferred method: Rebase the branch
 
-If you have a local git environment and meet the criteria below, one option is to rebase the branch and add your Signed-off-by lines in the new commits.  Please note that if others have already begun work based upon the commits in this branch, this solution will rewrite history and may cause serious issues for collaborators ([described in the git documentation](https://git-scm.com/book/en/v2/Git-Branching-Rebasing) under \\"The Perils of Rebasing\\").
+If you have a local git environment and meet the criteria below, one option is to rebase the branch and add your Signed-off-by lines in the new commits.  Please note that if others have already begun work based upon the commits in this branch, this solution will rewrite history and may cause serious issues for collaborators ([described in the git documentation](https://git-scm.com/book/en/v2/Git-Branching-Rebasing) under "The Perils of Rebasing").
 
 You should only do this if:
 
@@ -109,9 +109,9 @@ Commit sha: [e76ed60](https://github.com/robotland/test/pull/113/commits/e76ed60
 `;
 
 exports[`dco pull_request event allowRemediationCommits.thirdParty: true multiple commits with same author: creates a failing check with remidiation instructions 1`] = `
-Object {
-  "actions": Array [
-    Object {
+{
+  "actions": [
+    {
       "description": "would set status to passing",
       "identifier": "override",
       "label": "Set DCO to pass",
@@ -122,7 +122,7 @@ Object {
   "head_branch": "dco-test",
   "head_sha": "e76ed6025cec8879c75454a6efd6081d46de4c94",
   "name": "DCO",
-  "output": Object {
+  "output": {
     "summary": "There are 2 commits incorrectly signed off.  This means that the author(s) of these commits failed to include a Signed-off-by line in their commit message.
 
 To avoid having PRs blocked in the future, always include \`Signed-off-by: Author Name <authoremail@example.com>\` in *every* commit message. You can also do this automatically by using the -s flag (i.e., \`git commit -s\`).
@@ -174,7 +174,7 @@ Signed-off-by: YOUR_NAME <YOUR_EMAIL>
 
 ### Least preferred method: Rebase the branch
 
-If you have a local git environment and meet the criteria below, one option is to rebase the branch and add your Signed-off-by lines in the new commits.  Please note that if others have already begun work based upon the commits in this branch, this solution will rewrite history and may cause serious issues for collaborators ([described in the git documentation](https://git-scm.com/book/en/v2/Git-Branching-Rebasing) under \\"The Perils of Rebasing\\").
+If you have a local git environment and meet the criteria below, one option is to rebase the branch and add your Signed-off-by lines in the new commits.  Please note that if others have already begun work based upon the commits in this branch, this solution will rewrite history and may cause serious issues for collaborators ([described in the git documentation](https://git-scm.com/book/en/v2/Git-Branching-Rebasing) under "The Perils of Rebasing").
 
 You should only do this if:
 
@@ -204,9 +204,9 @@ Commit sha: [e76ed60](https://github.com/robotland/test/pull/113/commits/e76ed60
 `;
 
 exports[`dco pull_request event allowRemediationCommits.thirdParty: true multiple commits: creates a failing check with remidiation instructions 1`] = `
-Object {
-  "actions": Array [
-    Object {
+{
+  "actions": [
+    {
       "description": "would set status to passing",
       "identifier": "override",
       "label": "Set DCO to pass",
@@ -217,7 +217,7 @@ Object {
   "head_branch": "dco-test",
   "head_sha": "e76ed6025cec8879c75454a6efd6081d46de4c94",
   "name": "DCO",
-  "output": Object {
+  "output": {
     "summary": "There are 2 commits incorrectly signed off.  This means that the author(s) of these commits failed to include a Signed-off-by line in their commit message.
 
 To avoid having PRs blocked in the future, always include \`Signed-off-by: Author Name <authoremail@example.com>\` in *every* commit message. You can also do this automatically by using the -s flag (i.e., \`git commit -s\`).
@@ -283,7 +283,7 @@ Signed-off-by: YOUR_NAME <YOUR_EMAIL>
 
 ### Least preferred method: Rebase the branch
 
-If you have a local git environment and meet the criteria below, one option is to rebase the branch and add your Signed-off-by lines in the new commits.  Please note that if others have already begun work based upon the commits in this branch, this solution will rewrite history and may cause serious issues for collaborators ([described in the git documentation](https://git-scm.com/book/en/v2/Git-Branching-Rebasing) under \\"The Perils of Rebasing\\").
+If you have a local git environment and meet the criteria below, one option is to rebase the branch and add your Signed-off-by lines in the new commits.  Please note that if others have already begun work based upon the commits in this branch, this solution will rewrite history and may cause serious issues for collaborators ([described in the git documentation](https://git-scm.com/book/en/v2/Git-Branching-Rebasing) under "The Perils of Rebasing").
 
 You should only do this if:
 
@@ -313,7 +313,7 @@ Commit sha: [<other ](https://github.com/robotland/test/pull/113/commits/<other 
 `;
 
 exports[`dco pull_request event creates a error status if app has no access to checks 1`] = `
-Object {
+{
   "context": "DCO",
   "description": "The sign-off is missing.",
   "state": "failure",
@@ -322,9 +322,9 @@ Object {
 `;
 
 exports[`dco pull_request event creates a failing check 1`] = `
-Object {
-  "actions": Array [
-    Object {
+{
+  "actions": [
+    {
       "description": "would set status to passing",
       "identifier": "override",
       "label": "Set DCO to pass",
@@ -335,7 +335,7 @@ Object {
   "head_branch": "dco-test",
   "head_sha": "e76ed6025cec8879c75454a6efd6081d46de4c94",
   "name": "DCO",
-  "output": Object {
+  "output": {
     "summary": "There is one commit incorrectly signed off.  This means that the author of this commit failed to include a Signed-off-by line in the commit message.
 
 To avoid having PRs blocked in the future, always include \`Signed-off-by: Author Name <authoremail@example.com>\` in *every* commit message. You can also do this automatically by using the -s flag (i.e., \`git commit -s\`).
@@ -347,7 +347,7 @@ Here is how to fix the problem so that this code can be merged.
 
 ### Rebase the branch
 
-If you have a local git environment and meet the criteria below, one option is to rebase the branch and add your Signed-off-by lines in the new commits.  Please note that if others have already begun work based upon the commits in this branch, this solution will rewrite history and may cause serious issues for collaborators ([described in the git documentation](https://git-scm.com/book/en/v2/Git-Branching-Rebasing) under \\"The Perils of Rebasing\\").
+If you have a local git environment and meet the criteria below, one option is to rebase the branch and add your Signed-off-by lines in the new commits.  Please note that if others have already begun work based upon the commits in this branch, this solution will rewrite history and may cause serious issues for collaborators ([described in the git documentation](https://git-scm.com/book/en/v2/Git-Branching-Rebasing) under "The Perils of Rebasing").
 
 You should only do this if:
 
@@ -376,13 +376,13 @@ Commit sha: [e76ed60](https://github.com/robotland/test/pull/113/commits/e76ed60
 `;
 
 exports[`dco pull_request event creates a passing check 1`] = `
-Object {
+{
   "completed_at": "2018-07-14T18:18:54.156Z",
   "conclusion": "success",
   "head_branch": "changes",
   "head_sha": "34c5c7793cb3b279e22454cb6750c80560547b3a",
   "name": "DCO",
-  "output": Object {
+  "output": {
     "summary": "All commits are signed off!",
     "title": "DCO",
   },
@@ -392,7 +392,7 @@ Object {
 `;
 
 exports[`dco pull_request event creates a passing status if app has no access to checks 1`] = `
-Object {
+{
   "context": "DCO",
   "description": "All commits are signed off!",
   "state": "success",
@@ -401,9 +401,9 @@ Object {
 `;
 
 exports[`dco pull_request event with custom configuration allowRemediationCommits.individual: true creates a failing check with remidiation instructions 1`] = `
-Object {
-  "actions": Array [
-    Object {
+{
+  "actions": [
+    {
       "description": "would set status to passing",
       "identifier": "override",
       "label": "Set DCO to pass",
@@ -414,7 +414,7 @@ Object {
   "head_branch": "dco-test",
   "head_sha": "e76ed6025cec8879c75454a6efd6081d46de4c94",
   "name": "DCO",
-  "output": Object {
+  "output": {
     "summary": "There is one commit incorrectly signed off.  This means that the author of this commit failed to include a Signed-off-by line in the commit message.
 
 To avoid having PRs blocked in the future, always include \`Signed-off-by: Author Name <authoremail@example.com>\` in *every* commit message. You can also do this automatically by using the -s flag (i.e., \`git commit -s\`).
@@ -444,7 +444,7 @@ Please note: You should avoid adding empty commits (i.e., \`git commit -s --allo
 
 ### Least preferred method: Rebase the branch
 
-If you have a local git environment and meet the criteria below, one option is to rebase the branch and add your Signed-off-by lines in the new commits.  Please note that if others have already begun work based upon the commits in this branch, this solution will rewrite history and may cause serious issues for collaborators ([described in the git documentation](https://git-scm.com/book/en/v2/Git-Branching-Rebasing) under \\"The Perils of Rebasing\\").
+If you have a local git environment and meet the criteria below, one option is to rebase the branch and add your Signed-off-by lines in the new commits.  Please note that if others have already begun work based upon the commits in this branch, this solution will rewrite history and may cause serious issues for collaborators ([described in the git documentation](https://git-scm.com/book/en/v2/Git-Branching-Rebasing) under "The Perils of Rebasing").
 
 You should only do this if:
 
@@ -473,9 +473,9 @@ Commit sha: [e76ed60](https://github.com/robotland/test/pull/113/commits/e76ed60
 `;
 
 exports[`dco pull_request event with custom configuration require.members: false Org membership status is cached in case of multiple commits with same author 1`] = `
-Object {
-  "actions": Array [
-    Object {
+{
+  "actions": [
+    {
       "description": "would set status to passing",
       "identifier": "override",
       "label": "Set DCO to pass",
@@ -486,7 +486,7 @@ Object {
   "head_branch": "dco-test",
   "head_sha": "e76ed6025cec8879c75454a6efd6081d46de4c94",
   "name": "DCO",
-  "output": Object {
+  "output": {
     "summary": "There are 2 commits incorrectly signed off.  This means that the author(s) of these commits failed to include a Signed-off-by line in their commit message.
 
 To avoid having PRs blocked in the future, always include \`Signed-off-by: Author Name <authoremail@example.com>\` in *every* commit message. You can also do this automatically by using the -s flag (i.e., \`git commit -s\`).
@@ -498,7 +498,7 @@ Here is how to fix the problem so that this code can be merged.
 
 ### Rebase the branch
 
-If you have a local git environment and meet the criteria below, one option is to rebase the branch and add your Signed-off-by lines in the new commits.  Please note that if others have already begun work based upon the commits in this branch, this solution will rewrite history and may cause serious issues for collaborators ([described in the git documentation](https://git-scm.com/book/en/v2/Git-Branching-Rebasing) under \\"The Perils of Rebasing\\").
+If you have a local git environment and meet the criteria below, one option is to rebase the branch and add your Signed-off-by lines in the new commits.  Please note that if others have already begun work based upon the commits in this branch, this solution will rewrite history and may cause serious issues for collaborators ([described in the git documentation](https://git-scm.com/book/en/v2/Git-Branching-Rebasing) under "The Perils of Rebasing").
 
 You should only do this if:
 
@@ -528,9 +528,9 @@ Commit sha: [e76ed60](https://github.com/robotland/test/pull/113/commits/e76ed60
 `;
 
 exports[`dco pull_request event with custom configuration require.members: false Repository belongs to author 1`] = `
-Object {
-  "actions": Array [
-    Object {
+{
+  "actions": [
+    {
       "description": "would set status to passing",
       "identifier": "override",
       "label": "Set DCO to pass",
@@ -541,7 +541,7 @@ Object {
   "head_branch": "dco-test",
   "head_sha": "e76ed6025cec8879c75454a6efd6081d46de4c94",
   "name": "DCO",
-  "output": Object {
+  "output": {
     "summary": "There is one commit incorrectly signed off.  This means that the author of this commit failed to include a Signed-off-by line in the commit message.
 
 To avoid having PRs blocked in the future, always include \`Signed-off-by: Author Name <authoremail@example.com>\` in *every* commit message. You can also do this automatically by using the -s flag (i.e., \`git commit -s\`).
@@ -553,7 +553,7 @@ Here is how to fix the problem so that this code can be merged.
 
 ### Rebase the branch
 
-If you have a local git environment and meet the criteria below, one option is to rebase the branch and add your Signed-off-by lines in the new commits.  Please note that if others have already begun work based upon the commits in this branch, this solution will rewrite history and may cause serious issues for collaborators ([described in the git documentation](https://git-scm.com/book/en/v2/Git-Branching-Rebasing) under \\"The Perils of Rebasing\\").
+If you have a local git environment and meet the criteria below, one option is to rebase the branch and add your Signed-off-by lines in the new commits.  Please note that if others have already begun work based upon the commits in this branch, this solution will rewrite history and may cause serious issues for collaborators ([described in the git documentation](https://git-scm.com/book/en/v2/Git-Branching-Rebasing) under "The Perils of Rebasing").
 
 You should only do this if:
 
@@ -582,9 +582,9 @@ Commit sha: [e76ed60](https://github.com/robotland/test/pull/113/commits/e76ed60
 `;
 
 exports[`dco pull_request event with custom configuration require.members: false Repository does not belong to an organization or the author 1`] = `
-Object {
-  "actions": Array [
-    Object {
+{
+  "actions": [
+    {
       "description": "would set status to passing",
       "identifier": "override",
       "label": "Set DCO to pass",
@@ -595,7 +595,7 @@ Object {
   "head_branch": "dco-test",
   "head_sha": "e76ed6025cec8879c75454a6efd6081d46de4c94",
   "name": "DCO",
-  "output": Object {
+  "output": {
     "summary": "There is one commit incorrectly signed off.  This means that the author of this commit failed to include a Signed-off-by line in the commit message.
 
 To avoid having PRs blocked in the future, always include \`Signed-off-by: Author Name <authoremail@example.com>\` in *every* commit message. You can also do this automatically by using the -s flag (i.e., \`git commit -s\`).
@@ -607,7 +607,7 @@ Here is how to fix the problem so that this code can be merged.
 
 ### Rebase the branch
 
-If you have a local git environment and meet the criteria below, one option is to rebase the branch and add your Signed-off-by lines in the new commits.  Please note that if others have already begun work based upon the commits in this branch, this solution will rewrite history and may cause serious issues for collaborators ([described in the git documentation](https://git-scm.com/book/en/v2/Git-Branching-Rebasing) under \\"The Perils of Rebasing\\").
+If you have a local git environment and meet the criteria below, one option is to rebase the branch and add your Signed-off-by lines in the new commits.  Please note that if others have already begun work based upon the commits in this branch, this solution will rewrite history and may cause serious issues for collaborators ([described in the git documentation](https://git-scm.com/book/en/v2/Git-Branching-Rebasing) under "The Perils of Rebasing").
 
 You should only do this if:
 
@@ -636,9 +636,9 @@ Commit sha: [e76ed60](https://github.com/robotland/test/pull/113/commits/e76ed60
 `;
 
 exports[`dco pull_request event with custom configuration require.members: false commit author is not an org member 1`] = `
-Object {
-  "actions": Array [
-    Object {
+{
+  "actions": [
+    {
       "description": "would set status to passing",
       "identifier": "override",
       "label": "Set DCO to pass",
@@ -649,7 +649,7 @@ Object {
   "head_branch": "dco-test",
   "head_sha": "e76ed6025cec8879c75454a6efd6081d46de4c94",
   "name": "DCO",
-  "output": Object {
+  "output": {
     "summary": "There is one commit incorrectly signed off.  This means that the author of this commit failed to include a Signed-off-by line in the commit message.
 
 To avoid having PRs blocked in the future, always include \`Signed-off-by: Author Name <authoremail@example.com>\` in *every* commit message. You can also do this automatically by using the -s flag (i.e., \`git commit -s\`).
@@ -661,7 +661,7 @@ Here is how to fix the problem so that this code can be merged.
 
 ### Rebase the branch
 
-If you have a local git environment and meet the criteria below, one option is to rebase the branch and add your Signed-off-by lines in the new commits.  Please note that if others have already begun work based upon the commits in this branch, this solution will rewrite history and may cause serious issues for collaborators ([described in the git documentation](https://git-scm.com/book/en/v2/Git-Branching-Rebasing) under \\"The Perils of Rebasing\\").
+If you have a local git environment and meet the criteria below, one option is to rebase the branch and add your Signed-off-by lines in the new commits.  Please note that if others have already begun work based upon the commits in this branch, this solution will rewrite history and may cause serious issues for collaborators ([described in the git documentation](https://git-scm.com/book/en/v2/Git-Branching-Rebasing) under "The Perils of Rebasing").
 
 You should only do this if:
 
@@ -690,13 +690,13 @@ Commit sha: [e76ed60](https://github.com/robotland/test/pull/113/commits/e76ed60
 `;
 
 exports[`dco pull_request event with custom configuration require.members: false commit author is org member and commit is verified 1`] = `
-Object {
+{
   "completed_at": "2018-07-14T18:18:54.156Z",
   "conclusion": "success",
   "head_branch": "dco-test",
   "head_sha": "e76ed6025cec8879c75454a6efd6081d46de4c94",
   "name": "DCO",
-  "output": Object {
+  "output": {
     "summary": "All commits are signed off!",
     "title": "DCO",
   },
@@ -706,9 +706,9 @@ Object {
 `;
 
 exports[`dco pull_request event with custom configuration require.members: false commit author is org member but commit is not verified 1`] = `
-Object {
-  "actions": Array [
-    Object {
+{
+  "actions": [
+    {
       "description": "would set status to passing",
       "identifier": "override",
       "label": "Set DCO to pass",
@@ -719,7 +719,7 @@ Object {
   "head_branch": "dco-test",
   "head_sha": "e76ed6025cec8879c75454a6efd6081d46de4c94",
   "name": "DCO",
-  "output": Object {
+  "output": {
     "summary": "There is one commit incorrectly signed off.  This means that the author of this commit failed to include a Signed-off-by line in the commit message.
 
 To avoid having PRs blocked in the future, always include \`Signed-off-by: Author Name <authoremail@example.com>\` in *every* commit message. You can also do this automatically by using the -s flag (i.e., \`git commit -s\`).
@@ -731,7 +731,7 @@ Here is how to fix the problem so that this code can be merged.
 
 ### Rebase the branch
 
-If you have a local git environment and meet the criteria below, one option is to rebase the branch and add your Signed-off-by lines in the new commits.  Please note that if others have already begun work based upon the commits in this branch, this solution will rewrite history and may cause serious issues for collaborators ([described in the git documentation](https://git-scm.com/book/en/v2/Git-Branching-Rebasing) under \\"The Perils of Rebasing\\").
+If you have a local git environment and meet the criteria below, one option is to rebase the branch and add your Signed-off-by lines in the new commits.  Please note that if others have already begun work based upon the commits in this branch, this solution will rewrite history and may cause serious issues for collaborators ([described in the git documentation](https://git-scm.com/book/en/v2/Git-Branching-Rebasing) under "The Perils of Rebasing").
 
 You should only do this if:
 
