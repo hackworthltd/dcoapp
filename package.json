@@ -1,7 +1,7 @@
 {
   "name": "dco",
   "private": true,
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "a GitHub App that enforces the DCO on Pull Requests",
   "author": "Brandon Keepers",
   "license": "ISC",
